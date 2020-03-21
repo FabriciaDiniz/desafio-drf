@@ -16,12 +16,15 @@ Including another URLconf
 from rest_framework import routers
 from django.contrib import admin
 from django.conf.urls import url, include
-from medicar.auth.views import UserViewSet
+from medicar.auth import views
 
 # automatically determining the URL conf.
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),
