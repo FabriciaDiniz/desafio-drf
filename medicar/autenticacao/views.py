@@ -1,7 +1,7 @@
-from rest_framework import viewsets
-from rest_framework import permissions
+from rest_framework import viewsets, permissions
+from rest_framework.authentication import TokenAuthentication
 from django.contrib.auth.models import User, Group
-from medicar.auth.serializers import UserSerializer, GroupSerializer
+from medicar.autenticacao.serializers import UserSerializer, GroupSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -10,6 +10,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
+    authentication_classes = [TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
 
 
@@ -19,4 +20,5 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+    authentication_classes = [TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]

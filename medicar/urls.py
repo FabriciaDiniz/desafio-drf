@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from rest_framework import routers
+from rest_framework.authtoken import views as fw_views
 from django.contrib import admin
 from django.conf.urls import url, include
-from medicar.auth import views
+from medicar.autenticacao import views
 
 # automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -29,4 +30,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),
     url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^auth-token/', fw_views.obtain_auth_token),
 ]

@@ -1,5 +1,5 @@
 from django.db import models
-from medicar.home.common import *
+from medicar.home.common import ESPECIALIDADE_CHOICES
 
 class Medico(models.Model):
     def __str__(self):
