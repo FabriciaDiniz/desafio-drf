@@ -16,8 +16,9 @@ Including another URLconf
 from rest_framework import routers
 from rest_framework.authtoken import views as fw_views
 from django.contrib import admin
-from django.conf.urls import url, include
+from django.urls import path, include
 from medicar.autenticacao import views
+from medicar.home import urls
 
 # automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -27,8 +28,10 @@ router.register(r'groups', views.GroupViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include(router.urls)),
-    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^auth-token/', fw_views.obtain_auth_token),
+    path('admin/', admin.site.urls),
+    path('', include(urls)),
+    path('router/', include(router.urls)),
+    path('auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('auth-token/', fw_views.obtain_auth_token),
+
 ]
