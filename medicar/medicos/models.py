@@ -1,5 +1,5 @@
 from django.db import models
-from medicar.home.common import ESPECIALIDADE_CHOICES
+from medicar.especialidades.models import Especialidade
 
 class Medico(models.Model):
     def __str__(self):
@@ -9,4 +9,5 @@ class Medico(models.Model):
     crm = models.CharField(max_length=13, unique=True, null=False)
     email = models.CharField(max_length=200, unique=True, null=True)
     telefone = models.CharField(max_length=11, unique=False,null=True)
-    especialidade = models.CharField(max_length=20, choices=ESPECIALIDADE_CHOICES, null=True, default='CLINICA GERAL')
+    especialidade = models.ForeignKey(Especialidade, max_length=50,on_delete=models.CASCADE,null=True)
+

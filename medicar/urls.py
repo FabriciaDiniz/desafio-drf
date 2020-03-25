@@ -18,7 +18,6 @@ from rest_framework.authtoken import views as fw_views
 from django.contrib import admin
 from django.urls import path, include
 from medicar.autenticacao import views
-from medicar.home import urls
 
 # automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -29,9 +28,8 @@ router.register(r'groups', views.GroupViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(urls)),
-    path('router/', include(router.urls)),
+    path('', include(router.urls)),
     path('auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('auth-token/', fw_views.obtain_auth_token),
-
+    path('especialidades/', include('medicar.especialidades.urls')),
 ]
