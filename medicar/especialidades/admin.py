@@ -1,3 +1,9 @@
 from django.contrib import admin
+from medicar.especialidades.models import Especialidade
 
-# Register your models here.
+
+class EspecialidadeAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"slug": ("nome",)}
+
+
+admin.site.register(Especialidade, EspecialidadeAdmin)

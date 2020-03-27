@@ -25,6 +25,8 @@ SECRET_KEY = 'sg%+i^hc+$o%nsiu=y7vu^+gsv+8f!ng*a$#h86qnf26z9ue-+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'users.User'
+
 ALLOWED_HOSTS = []
 
 
@@ -38,13 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'djoser',
     'rest_framework.authtoken',
-    'medicar.home',
-    'medicar.autenticacao',
-    'medicar.clientes',
-    'medicar.gestores',
+    'medicar.users',
     'medicar.medicos',
     'medicar.especialidades',
+    'medicar.agenda',
 ]
 
 MIDDLEWARE = [
@@ -91,15 +92,21 @@ DATABASES = {
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 15,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ]
+}
 
+DJOSER = {
+    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': '#/activate/{uid}/{token}',
+    'USER_CREATE_PASSWORD_RETYPE': True,
+    'SERIALIZERS': {},
 }
 
 # Password validation
