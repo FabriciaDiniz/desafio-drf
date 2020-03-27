@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
+from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from django.core.exceptions import ValidationError
@@ -30,9 +30,9 @@ class UserManager(BaseUserManager):
     def create_staffuser(self, username, email, password):
 
         user = self.create_user(
-            username = self.normalize_email(username),
-            email = self.normalize_email(email),
-            password = password,
+            username=self.normalize_email(username),
+            email=self.normalize_email(email),
+            password=password,
         )
         user.staff = True
         user.set_password(password)
@@ -57,7 +57,7 @@ class UserManager(BaseUserManager):
         return self._create_user(username, email, password, **extra_fields)
 
 
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, PermissionsMixin):
     username_validator = UnicodeUsernameValidator()
 
     username = models.CharField(
@@ -112,15 +112,12 @@ class Meta:
     verbose_name = _('user')
     verbose_name_plural = _('users')
 
-
     def clean(self):
         super().clean()
         self.email = self.__class__.objects.normalize_email(self.email)
 
-
     def has_perm(self, perm, obj=None):
         return True
-
 
     def has_module_perms(self, app_label):
         return True
