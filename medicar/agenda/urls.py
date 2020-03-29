@@ -1,10 +1,9 @@
-from django.urls import path
+from rest_framework import routers
 
-from medicar.agenda.views import api_detalhe_agenda
+from .views import *
 
 
-app_name = 'agenda'
+router = routers.SimpleRouter()
+router.register(r'', AgendaViewSet, 'consulta-list')
 
-urlpatterns = [
-    path('<slug>/', api_detalhe_agenda, name='detalhe'),
-]
+urlpatterns = router.urls

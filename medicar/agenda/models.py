@@ -21,7 +21,6 @@ class Agenda(models.Model):
     medico = models.ForeignKey(Medico, max_length=200, on_delete=models.CASCADE, null=False)
     dia = models.DateField(default=date.today, null=False)
     horarios = models.ManyToManyField(Horario)
-    slug = models.SlugField(max_length=50, default=str(id))
 
     class Meta:
         ordering = ['-dia']
