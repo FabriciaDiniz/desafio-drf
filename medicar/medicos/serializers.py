@@ -10,4 +10,4 @@ class MedicosSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Medico
-        fields = ['id', 'nome', 'crm', 'especialidade']
+        fields = ['id', 'crm', 'nome', 'especialidade']

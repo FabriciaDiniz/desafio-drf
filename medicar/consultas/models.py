@@ -27,7 +27,7 @@ class Consulta(models.Model):
             raise ValidationError('Consulta não pode ser agendada para data passada')
         consultas = Consulta.objects.filter(horario=self.horario).filter(agenda=self.agenda)
         if consultas:
-            raise ValidationError('Já existe uma consultas marcada para este dia e horário')
+            raise ValidationError('Já existe uma consulta marcada para este dia e horário')
 
     def save(self):
         self.clean()

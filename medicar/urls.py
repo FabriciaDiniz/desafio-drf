@@ -8,4 +8,6 @@ urlpatterns = [
     path('agenda/', include('medicar.agenda.urls', 'agenda_api')),
     path('users/', include('medicar.users.urls', 'user_api')),
     path('especialidades/', include('medicar.especialidades.urls')),
+    path('medicos/', include('medicar.medicos.urls')),
+    path('consultas/', include('medicar.consultas.urls'))
 ]
