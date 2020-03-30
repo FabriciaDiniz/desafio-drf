@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b31288a-bb67-4850-8898-76938641681e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/desafio-drf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fabri.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/migrations/0002_auto_20200327_1412.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/migrations/0003_auto_20200327_1454.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/agenda/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/consultas/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/migrations/0002_especialidade_slug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/especialidades/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/migrations/0002_auto_20200327_2003.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/medicos/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/migrations/0002_auto_20200327_1338.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicar/wsgi.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZhQEafZyRv38Agv1fCYOhG6RVH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fabri\dev\desafio-intmed\medicar\autenticacao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fabri\dev\desafio-intmed\medicar\autenticacao" />
+      <recent name="C:\Users\fabri\dev\desafio-intmed\medicar\especialidades" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.views">
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="desafio-drf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/medicar/agenda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/medicar/agenda/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="desafio-drf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/medicar/agenda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/medicar/agenda/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.models" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b31288a-bb67-4850-8898-76938641681e" name="Default Changelist" comment="" />
+      <created>1585288735848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585288735848</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585301062639">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585301062639" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1585293870702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585293870702" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1585350789679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585350789679" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585300224942">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1585300224942" />
+    <state x="855" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1585352962873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="855" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585352962873" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585530740148">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585530740148" />
+  </component>
+</project>
