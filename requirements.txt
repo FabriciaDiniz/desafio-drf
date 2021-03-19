@@ -4,7 +4,7 @@ colorama==0.4.3
 Django==3.0.7
 django-filter==2.2.0
 django-templated-mail==1.1.1
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 djoser==2.0.3
 isort==4.3.21
 jsonpickle==1.3
