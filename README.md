@@ -1,5 +1,4 @@
 # desafio-drf
-Repositório para o desafio em https://github.com/Intmed-Software/vagas
 
 ### Para rodar o programa pela primeira vez:
 Certifique-se de que você tem o Python 3 instalado, clone o repositorio e:  
